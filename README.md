@@ -1,4 +1,4 @@
-# Hounslow Connect - Backend
+# Hounslow Connect - Admin
 
 This is a [Vue.js](https://vuejs.org/) SPA (Single Page App) using [Vue Router](https://router.vuejs.org) for the routing. Therefore, a good knowledge of both Vue.js and Vue Router is expected when working on this project.
 
@@ -55,13 +55,13 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/RoyalBoroughKingston/ck-backend/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Connected-Places/admin/tags).
 
 ## Authors
 
 - [Ayup Digital](https://ayup.agency/)
 
-See also the list of [contributors](https://github.com/RoyalBoroughKingston/ck-backend/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/Connected-Places/admin/contributors) who participated in this project.
 
 ## License
 
