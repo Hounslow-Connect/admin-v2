@@ -369,7 +369,10 @@ export default {
           if (data.status === this.service.status) {
             delete data.status;
           }
-          if (data.score === this.service.score) {
+          if (
+            data.score === this.service.score ||
+            (!data.score && !this.service.score)
+          ) {
             delete data.score;
           }
           if (data.intro === this.service.intro) {
@@ -508,7 +511,7 @@ export default {
         params: { service: this.service.id }
       };
 
-      if (this.auth.isGlobalAdmin) {
+      if (this.auth.isSuperAdmin) {
         try {
           const { data } = await http.get(
             `/update-requests/${updateRequestId}`
