@@ -39,7 +39,6 @@
       @input="onInput('image_file_id', $event.file_id)"
       id="image"
       label="Persona image"
-      accept="image/x-png"
       :existing-url="
         id
           ? apiUrl(`/collections/personas/${id}/image.png?v=${now}`)
@@ -85,7 +84,7 @@
       @input="$emit('update:category_taxonomies', $event)"
       :error="errors.get('category_taxonomies')"
       @clear="$emit('clear', 'category_taxonomies')"
-      :hierarchy="false"
+      :showCollections="false"
     />
   </div>
 </template>

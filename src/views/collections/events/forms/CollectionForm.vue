@@ -26,7 +26,6 @@
       @input="onInput('image_file_id', $event.file_id)"
       id="image"
       label="Event collection image"
-      accept="image/x-svg"
       :existing-url="
         id
           ? apiUrl(`/collections/organisation-events/${id}/image.svg?v=${now}`)
@@ -72,7 +71,7 @@
       @input="$emit('update:category_taxonomies', $event)"
       :error="errors.get('category_taxonomies')"
       @clear="$emit('clear', 'category_taxonomies')"
-      :hierarchy="false"
+      :showCollections="false"
     />
   </div>
 </template>
